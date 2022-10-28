@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block links %}
+  <link rel="stylesheet" href="{% static 'css/posts_page.css' %}">
+{% endblock  %}
+
+
+{% block groups_block %}
+  <div class="groups_nav">
+    {% for item in groups %}
+      <div class="group_item"><p>{{ item.title }}</p></div>
+    {% endfor %}
+  </div>
+{% endblock %}
+
+{% block posts_block %}
+  <div class="posts_box">
+    <div class="group_title">{{ group.title }}</div>
+    {% for post in posts %}
+        <div class="post_content">
+          <p>{{ post.text }}</p>
+        </div>
+    {% endfor %}
+  </div>
+
+{% endblock %}

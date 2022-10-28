@@ -1,0 +1,32 @@
+main {
+    width: 1400px;
+    margin: 0 auto;
+}
+.groups_nav {
+    display: flex;
+    font-size: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.group_item { 
+    width: 270px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: antiquewhite;
+    border-radius: 15px;
+}
+
+.group_item:last-child{
+    border: none;
+}
+
+.posts_box { 
+    width: 100px;
+    background-color: aqua;
+}
+

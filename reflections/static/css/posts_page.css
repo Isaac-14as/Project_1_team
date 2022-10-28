@@ -1,0 +1,44 @@
+.group_title {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.groups_nav {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+}
+.group_item {
+    background-color: aqua;
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    border-bottom: solid 2px blue;
+}
+.group_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+main {
+    display: flex;
+
+}
+.posts_box{
+    width: 80%;
+    
+}
+.post_content {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}

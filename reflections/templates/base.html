@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="ru">          
+  <head>    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+    <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    {% block links %}
+    {% endblock %}
+  </head>
+  <body>       
+    <header>
+      {% include 'includes/header.html' %}
+    </header>
+    <main>
+      {% comment %} {% block groups_block %}
+        Контент не подвезли
+      {% endblock %} {% endcomment %}
+      <div class="groups_nav">
+        {% for item in groups %}
+          <div class="group_item">
+            <a class="group_link" href="{% url 'posts:posts_page' item.slug %}">
+              <p>{{ item.title }}</p>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+      {% block posts_block %}
+      {% endblock %}
+    </main>
+    {% comment %} <footer>
+      {% include 'includes/footer.html' %} 
+    </footer> {% endcomment %}
+  </body>
+</html> 

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block links %}
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock  %}
+
+
+{% block groups_block %}
+  <div class="groups_nav">
+    {% for item in groups %}
+      <div class="group_item"><p>{{ item.title }}</p></div>
+    {% endfor %}
+  </div>
+{% endblock %}

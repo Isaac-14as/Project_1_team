@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(87, 87, 87);
+    height: 100%;
+    width: 100%;
+}
+
+.header_box {
+    background-color: rgb(50, 50, 50);
+    height: 70px;
+    width: 100%;
+    border-bottom: 1px solid #e1ce3e;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+}
